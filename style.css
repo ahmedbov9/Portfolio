@@ -2,6 +2,77 @@
 * {
   scroll-behavior: smooth;
 }
+#menu-btn{
+
+  display: none;
+}
+
+
+.nav-list-mobile-container{
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  flex-direction: column;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+.about-content-container {
+  flex-direction: column;
+  gap: 50px;  
+}
+
+.skills-table {
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.projects-gallary {
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.nav-list {
+  display: none;
+}
+#menu-btn {
+  display: block;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 10px;
+
+}
+.nav-list-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.nav-list-mobile > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list-mobile > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  transition: color 0.2s ease;
+}
+}
+.active-menu{
+  left: 0;
+}
 .unSelectedIcon{
     user-select: none;
   -webkit-user-drag: none;

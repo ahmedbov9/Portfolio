@@ -1,13 +1,18 @@
-const navLinks = document.querySelectorAll('.nav-list a');
-
-
-
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-
-        navLinks.forEach(l => l.classList.remove('selected'));
-
-        link.classList.add('selected');
+    let menuBtn = document.getElementById("menu-btn");
+    let menu = document.getElementById("nav-list-mobile-container");
+    let isMenuOpen = false;
+    menuBtn.addEventListener("click", function () {
+        if (!isMenuOpen) {
+            menu.classList.add("active-menu");
+            isMenuOpen = true;
+        }else{
+            menu.classList.remove("active-menu");
+            isMenuOpen = false;
+        }
+        
     });
-});
+
+    function closeMenu() { 
+        menu.classList.remove("active-menu");
+        isMenuOpen = false;
+    }

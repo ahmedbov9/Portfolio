@@ -21,6 +21,18 @@
                 </li>
                 <li><a href="#contact" class="contact">Contact</a></li>
             </ul>
+            <div class="nav-list-mobile-container" id="nav-list-mobile-container">
+            <ul class="nav-list-mobile">
+                <li><a href="#home"  onclick="closeMenu()" class="home">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()" class="about">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()" class="skills">Skills</a></li>
+                <li>
+                    <a href="#projects" onclick="closeMenu()" class="projects">Projects</a>
+                </li>
+                <li><a href="#contact" onclick="closeMenu()" class="contact">Contact</a></li>
+            </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
             <div class="logo">
                 <p>Ahmed Alfaifi</p>
                 <img src="Images/logo-transparent.png" draggable="false" alt="logo" />
@@ -159,7 +171,7 @@
               </a>
             </div>
           
-            <form class="contact-form" action="https://formspree.io/f/meoapboj" method="POST">
+            <form class="contact-form" id="contact" action="https://formspree.io/f/meoapboj" method="POST">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
