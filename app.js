@@ -16,3 +16,17 @@
         menu.classList.remove("active-menu");
         isMenuOpen = false;
     }
+    if (window.innerWidth > 768) {
+        closeMenu();
+    }
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
