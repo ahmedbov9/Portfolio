@@ -80,36 +80,9 @@
     user-select: none;
   -webkit-user-drag: none;
 }
-.d-block{
-  display: block;
-}
-.m-0 {
-  margin: 0;
-}
-.smSpace {
-  height: 50px;
-  width: 100%;
-}
-.mdSpace {
-  height: 100px;
-  width: 100%;
-}
-.lgSpace {
-  height: 200px;
-  width: 100%;
-}
-.xlSpace {
-  height: 300px;
-  width: 100%;
-}
-.xxlSpace {
-  height: 400px;
-  width: 100%;
-}
-.xxxlSpace {
-  height: 500px;
-  width: 100%;
-}
+
+
+
 
 body {
   background: linear-gradient(to right, #2d2d2d, #1e1e1e);
@@ -121,10 +94,7 @@ body {
 header {
   background-color: #00000077;
 }
-.selected {
-  color: #2196f3;
-  border-bottom: #2196f3 solid 2px;
-}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -204,10 +174,7 @@ nav > ul > li > a {
   border: 1px solid gray;
   margin: 0;
 }
-.pre-line-paragraph {
-  white-space: pre-line;
-  margin: 0;
-}
+
 
 .buttons-container {
   display: flex;
@@ -223,7 +190,6 @@ nav > ul > li > a {
   cursor: pointer;
   color: white;
 }
-
 .download-btn {
   background: #1d87da;
   transition: 0.3s ease;
@@ -280,7 +246,6 @@ nav > ul > li > a {
 }
 .summary-container {
   width: 30%;
-
   border: 0.5px solid #1d87da;
   border-radius: 10px;
   background: #0000001d;
@@ -368,24 +333,72 @@ nav > ul > li > a {
   display: block;
   margin: auto;
 }
-.projects-gallary{
+.cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  border-radius: 20px;
-  flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
-  width: 80%;
+  height: auto;
+  flex-wrap: wrap;
   background: #0000001d;
-    padding: 20px;
+  width: 80%;
+  padding: 20px;
+  margin-top: 20px;
 }
-.projects-gallary > img {
+.card{
+  background: #292a2d;
+  border-radius: 10px;
+  padding: 20px;
   width: 300px;
-  height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.card-content > a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content > a > button:nth-child(1) {
+  background: #0077cc;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.card-content >  button {
+  background: #292a2d;
+  border: 1px solid #5c5c5c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.card > img {
+ 
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
   user-select: none;
   -webkit-user-drag: none;
 }
+.card-content > a > button:hover {
+  background: #005fa3;
+}
+.card-content >  button:hover {
+  background: #3c3c3c;  
+}
+
 .contact-section {
   background-color: #121212;
   color: #fff;
@@ -461,4 +474,41 @@ nav > ul > li > a {
   background: #2196f3;
   display: block;
   margin: auto;
+}
+.upArrow{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: -500px;
+  transition: 0.3s;
+  z-index: 9999;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;;
+  opacity: 0.5;
+  cursor: pointer;
+  
+}
+.upArrow > a{
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.upArrow:hover{
+  opacity: 1;
+  background: #292a2d;
+}
+.show-up-arrow{
+  right: 20px;
 }

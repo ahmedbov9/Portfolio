@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/classes.css" />
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             </ul>
             <div class="nav-list-mobile-container" id="nav-list-mobile-container">
             <ul class="nav-list-mobile">
-                <li><a href="#home"  onclick="closeMenu()" class="home">Home</a></li>
+                <li><a href="#home" onclick="closeMenu()" class="home">Home</a></li>
                 <li><a href="#about" onclick="closeMenu()" class="about">About</a></li>
                 <li><a href="#skills" onclick="closeMenu()" class="skills">Skills</a></li>
                 <li>
@@ -53,10 +54,10 @@
             seamless digital experiences.
         </p>
         <div class="buttons-container">
-            <a href="content/MyResume.pdf" download="MyResume.pdf"><button class="download-btn">
+            <a href="content/MyResume.pdf" download="MyResume.pdf" target="_blank"><button class="download-btn">
                     <i class="fa-solid fa-download"></i> Download Resume
                 </button></a>
-            <a href="mailto:ahmedbov9@gmail.com"><button class="contact-btn"><i class="fa-regular fa-envelope"></i>
+            <a href="mailto:ahmedbov9@gmail.com" target="_blank"><button class="contact-btn"><i class="fa-regular fa-envelope"></i>
                     Contact
                     Me</button></a>
         </div>
@@ -145,15 +146,24 @@
       </section>
       <div class="xxxlSpace"></div>
       <section class="projects-section">
-          <h1 id="projects">Projects Gallary</h1>
-          <div class="projects-gallary">
-              <img src="Images/Project1.png"  alt="img" class="project-image" draggable="false" />
-              <img src="Images/Project2.png" alt="img" class="project-image" draggable="false" />
-              <img src="Images/Project3.png" alt="img" class="project-image" draggable="false" />
-              <img src="Images/Project4.png" alt="img" class="project-image" draggable="false" />
-              <img src="Images/Project5.png" alt="img" class="project-image" draggable="false" />
-              <img src="Images/Project6.png" alt="img" class="project-image" draggable="false" />
+          <h1 id="projects">Projects</h1>
+          <div class="cards-container">
+            <div class="card">
+                <img src="Images/Project1.png" alt="project1" draggable="false" width="100%" height="200px" />
+                <div class="card-content">
+                    <h3 class="m-1">Ecommerce App</h3>
+                    <div class="card-text">
+                    <p class="pre-line-paragraph m-0 text-start">
+                        An e-commerce application that provides a seamless shopping experience for users. 
+                        It integrates with APIs to fetch real-time product data and manage user authentication. 
+                        The application includes a comprehensive admin dashboard to manage products, orders, 
+                        and user accounts, offering full control over store operations.
+                    </p>
+                </div>  
+                    <a href="https://github.com/ahmedbov9/first-react-project" target="_blank"><button class="m-1">View Project</button></a> <a href="https://ecommerceahmedalfaifi.netlify.app/" target="_blank"><button>Visit Website</button></a>
+                </div>
             </div>
+        </div>
         </section>
         <div class="xxxlSpace"></div>
         <section class="contact-section">
@@ -179,7 +189,10 @@
             </form>
           </section>
           
-    <script src=" app.js"></script>
+          <div class="upArrow" id="upArrow">
+            <a href="#home" ><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

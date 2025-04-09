@@ -1,0 +1,52 @@
+.m-0 {
+    margin: 0;
+  }
+  .m-1 {
+    margin: 10px;
+  }
+  .m-2 {
+    margin: 20px;
+  } 
+  .m-3 {
+    margin: 30px;
+  }
+  .m-4 {
+    margin: 40px;
+  }
+  .m-5 {
+    margin: 50px;
+  }
+  .smSpace {
+    height: 50px;
+    width: 100%;
+  }
+  .mdSpace {
+    height: 100px;
+    width: 100%;
+  }
+  .lgSpace {
+    height: 200px;
+    width: 100%;
+  }
+  .xlSpace {
+    height: 300px;
+    width: 100%;
+  }
+  .xxlSpace {
+    height: 400px;
+    width: 100%;
+  }
+  .xxxlSpace {
+    height: 500px;
+    width: 100%;
+  }
+  .d-block{
+    display: block;
+  }
+  .pre-line-paragraph {
+    white-space: pre-line;
+    margin: 0;
+  }
+  .text-start{
+    text-align: start;
+  }

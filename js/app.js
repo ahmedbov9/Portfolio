@@ -1,5 +1,6 @@
     let menuBtn = document.getElementById("menu-btn");
     let menu = document.getElementById("nav-list-mobile-container");
+    let upArrow = document.getElementById('upArrow');
     let isMenuOpen = false;
     menuBtn.addEventListener("click", function () {
         if (!isMenuOpen) {
@@ -30,3 +31,13 @@
             closeMenu();
         }
     });
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            upArrow.classList.add('show-up-arrow');
+        } else {
+            upArrow.classList.remove('show-up-arrow');
+        }
+    }   );
+
+   
