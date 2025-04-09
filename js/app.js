@@ -12,7 +12,11 @@
         }
         
     });
-
+    window.addEventListener("click", function (event) {
+        if (event.target.closest("#menu-btn") === null && event.target.closest("#nav-list-mobile-container") === null) {
+            closeMenu();
+        }
+    });
     function closeMenu() { 
         menu.classList.remove("active-menu");
         isMenuOpen = false;
