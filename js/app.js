@@ -12,9 +12,11 @@
         }
         
     });
-    window.addEventListener("click", function () {
+window.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
             closeMenu();
-        
+            isMenuOpen = false;
+        }
     });
     function closeMenu() { 
         menu.classList.remove("active-menu");
