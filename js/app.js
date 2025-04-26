@@ -13,11 +13,10 @@
         
     });
 window.addEventListener("click", function (event) {
-        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-            closeMenu();
-            isMenuOpen = false;
-        }
-    });
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target) && isMenuOpen) {
+        closeMenu();
+    }
+});
     function closeMenu() { 
         menu.classList.remove("active-menu");
         isMenuOpen = false;

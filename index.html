@@ -8,6 +8,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/classes.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
@@ -23,15 +24,15 @@
                 <li><a href="#contact" class="contact">Contact</a></li>
             </ul>
             <div class="nav-list-mobile-container" id="nav-list-mobile-container">
-            <ul class="nav-list-mobile">
-                <li><a href="#home" onclick="closeMenu()" class="home">Home</a></li>
-                <li><a href="#about" onclick="closeMenu()" class="about">About</a></li>
-                <li><a href="#skills" onclick="closeMenu()" class="skills">Skills</a></li>
-                <li>
-                    <a href="#projects" onclick="closeMenu()" class="projects">Projects</a>
-                </li>
-                <li><a href="#contact" onclick="closeMenu()" class="contact">Contact</a></li>
-            </ul>
+                <ul class="nav-list-mobile">
+                    <li><a href="#home" onclick="closeMenu()" class="home">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()" class="about">About</a></li>
+                    <li><a href="#skills" onclick="closeMenu()" class="skills">Skills</a></li>
+                    <li>
+                        <a href="#projects" onclick="closeMenu()" class="projects">Projects</a>
+                    </li>
+                    <li><a href="#contact" onclick="closeMenu()" class="contact">Contact</a></li>
+                </ul>
             </div>
             <i class="fa-solid fa-bars" id="menu-btn"></i>
             <div class="logo">
@@ -57,13 +58,14 @@
             <a href="content/MyResume.pdf" download="MyResume.pdf" target="_blank"><button class="download-btn">
                     <i class="fa-solid fa-download"></i> Download Resume
                 </button></a>
-            <a href="mailto:ahmedbov9@gmail.com" target="_blank"><button class="contact-btn"><i class="fa-regular fa-envelope"></i>
+            <a href="mailto:ahmedbov9@gmail.com" target="_blank"><button class="contact-btn"><i
+                        class="fa-regular fa-envelope"></i>
                     Contact
                     Me</button></a>
         </div>
     </section>
     <div class="xxxlSpace"></div>
-    
+
     <section class="about-section">
         <h1 id="about">About Me</h1>
 
@@ -95,13 +97,15 @@
 
                     <p class="pre-line-paragraph">
 
-                        <span class="do"> I build modern, responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap.</span>
+                        <span class="do"> I build modern, responsive web interfaces using HTML, CSS, JavaScript, and
+                            Bootstrap.</span>
 
                         <span class="do"> I use React for dynamic UIs and connect to APIs for real-time data.</span>
 
                         <span class="do">Skilled in Git for version control and team collaboration.</span>
 
-                        <span class="do"> I also have basic experience with Node.js and Express to create simpleRESTful APIs thatsupport the front-end.</span>
+                        <span class="do"> I also have basic experience with Node.js and Express to create simpleRESTful
+                            APIs thatsupport the front-end.</span>
                     </p>
                     </p>
                 </div>
@@ -116,38 +120,81 @@
 
     <div class="xxlSpace"></div>
     <section class="skills-section">
-        <h1 class="section-title" id="skills" border="1">Skills</h1>
+        <h1 class="section-title" id="skills" border="1">Technical Skills
+        </h1>
         <div width="100%" class="skills-table">
-            <div class="skill">
-                <img src="Images/html5.svg" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
+            <div class="skills-container">
+                <div class="grid-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>HTML</p>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>CSS</p>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>JavaScript</p>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>React</p>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>NodeJs</p>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>Express</p>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <p>Bootstrap</p>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skil">
-                <img src="Images/css3.png" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/js.svg" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/react.png" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/bootsrap.png" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/nodeJs.png" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/express-js.png" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-            <div class="skill">
-                <img src="Images/git.webp" alt="logo" draggable="false" width="50" class="unSelectedIcon"/>
-            </div>
-        </div>
-      </section>
-      <div class="xxxlSpace"></div>
-      <section class="projects-section">
-          <h1 id="projects">Projects</h1>
-          <div class="cards-container">
+    </section>
+    <div class="xxxlSpace"></div>
+    <section class="projects-section">
+        <h1 id="projects">Projects</h1>
+        <div class="cards-container">
 
 
             <div class="card">
@@ -155,69 +202,72 @@
                 <div class="card-content">
                     <h3 class="m-1">Ecommerce App</h3>
                     <div class="card-text">
-                    <p class="pre-line-paragraph m-0 text-start">
-                        An e-commerce application that provides a seamless shopping experience for users. 
-                        It integrates with APIs to fetch real-time product data and manage user authentication. 
-                        The application includes a comprehensive admin dashboard to manage products, orders, 
-                        and user accounts, offering full control over store operations.
-                    </p>
-                </div>  
-                <div class="used-skills">
-                    <span>React</span>
-                    <span>Bootstrap</span>
-                    <span>Laravel</span>
-                </div>
-                <hr class="w-80 m-auto-3 hr-dark" />
-                <div class="d-flex justify-between w-100 align-center ">
-                   
-                    <a href="https://github.com/ahmedbov9/first-react-project" target="_blank"><button class="view-code-btn"><i class="fab fa-github"></i> View Code</button></a> 
-                    <a href="https://ecommerceahmedalfaifi.netlify.app/" target="_blank"><button class="live-demo-btn"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</button></a>
-                </div>  
+                        <p class="pre-line-paragraph m-0 text-start">
+                            An e-commerce application that provides a seamless shopping experience for users.
+                            It integrates with APIs to fetch real-time product data and manage user authentication.
+                            The application includes a comprehensive admin dashboard to manage products, orders,
+                            and user accounts, offering full control over store operations.
+                        </p>
+                    </div>
+                    <div class="used-skills">
+                        <span>React</span>
+                        <span>Bootstrap</span>
+                        <span>Laravel</span>
+                    </div>
+                    <hr class="w-80 m-auto-3 hr-dark" />
+                    <div class="d-flex justify-between w-100 align-center ">
+
+                        <a href="https://github.com/ahmedbov9/first-react-project" target="_blank"><button
+                                class="view-code-btn"><i class="fab fa-github"></i> View Code</button></a>
+                        <a href="https://ecommerceahmedalfaifi.netlify.app/" target="_blank"><button
+                                class="live-demo-btn"><i class="fa-solid fa-up-right-from-square"></i> Live
+                                Demo</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-        </section>
-        <div class="xxxlSpace"></div>
-        <section class="contact-section">
-            
-            <h1 class="section-title">Contact Me</h1>
-         
+    </section>
+    <div class="xxxlSpace"></div>
+    <section class="contact-section">
+
+        <h1 class="section-title">Contact Me</h1>
 
 
 
-            <div class="contact-icons">
-              <a href="mailto:ahmedbov9@gmail.com" target="_blank">
+
+        <div class="contact-icons">
+            <a href="mailto:ahmedbov9@gmail.com" target="_blank">
                 <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://github.com/ahmedbov9" target="_blank">
+            </a>
+            <a href="https://github.com/ahmedbov9" target="_blank">
                 <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/ahmed-a-alfaifi/" target="_blank">
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-a-alfaifi/" target="_blank">
                 <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://wa.me/966551062382" target="_blank">
+            </a>
+            <a href="https://wa.me/966551062382" target="_blank">
                 <i class="fab fa-whatsapp"></i>
-              </a>
-            </div>
-            
-            <form class="contact-form" id="contact" action="https://formspree.io/f/meoapboj" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
-              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
+            </a>
         </div>
-        <div class="w-50 d-flex flex-wrap gap-1" >
+
+        <form class="contact-form" id="contact" action="https://formspree.io/f/meoapboj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+        <div class="w-50 d-flex flex-wrap gap-1">
             <div class="email-contact"></div>
             <div class="phone-contact"></div>
             <div class="linkedin-contact"></div>
             <div class="github-contact"></div>
 
-          </section>
-          
-          <div class="upArrow" id="upArrow">
-            <a href="#home" ><i class="fa-solid fa-arrow-up"></i></a>
-          </div>
+    </section>
+
+    <div class="upArrow" id="upArrow">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
     <script src="js/app.js"></script>
 </body>
 
