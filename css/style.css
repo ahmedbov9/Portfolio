@@ -48,15 +48,19 @@ body {
 }
 header {
   background-color: #00000077;
+
+   
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   direction: rtl;
-  width: 80%;
+  width: 100%;
+  height: auto;
   margin: auto;
+
 }
 li > a:hover {
   color: #2196f3;
@@ -240,6 +244,8 @@ nav > ul > li > a {
   text-align: start;
   flex-direction: column;
   background: #000000b4;
+  padding: 40px 0;
+
 }
 
 .skills-section > h1 {
@@ -247,6 +253,7 @@ nav > ul > li > a {
   margin: 0;
   color: #2196f3;
   margin-top: 30px;
+
 }
 .skills-section > h1::after {
   position: relative;
@@ -264,9 +271,8 @@ nav > ul > li > a {
   justify-content: center;
   align-items: center;
   width: 100%;
-
   text-align: start;
-  height: 900px;
+  margin-top: 70px;
 
  
 }
